@@ -30,10 +30,15 @@ namespace Movie_APPLICATION.Models
         public Cinema Cinema { get; set;  }
 
 
-        //CINEMA
-        public int ProducerId { get; }
+        //Producer
+        public int ProducerId { get; }MovieCategories
         [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
+
+        //Category
+        public int categoryId { get; }
+        [ForeignKey("CategoryId")]
+        public MovieCategory Category { get; set; }
 
 
     }
