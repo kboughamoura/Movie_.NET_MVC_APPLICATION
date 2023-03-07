@@ -31,7 +31,7 @@ namespace Movie_APPLICATION.Models
 
 
         //Producer
-        public int ProducerId { get; }MovieCategories
+        public int ProducerId { get; }
         [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
 

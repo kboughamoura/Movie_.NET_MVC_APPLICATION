@@ -1,8 +1,11 @@
-﻿namespace Movie_APPLICATION.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Movie_APPLICATION.Models
 {
     public class MovieCategory
     {
-        public int ID;
+        [Key]
+        public int ID { get; set; }
         public string CategoryName { get; set; }
     }
 }
