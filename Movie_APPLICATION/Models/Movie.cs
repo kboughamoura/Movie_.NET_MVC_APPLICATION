@@ -25,18 +25,18 @@ namespace Movie_APPLICATION.Models
 
 
         //CINEMA
-        public int CinemaId { get; }
+        public int CinemaId { get; set; }
         [ForeignKey("CinemaId")]
         public Cinema Cinema { get; set;  }
 
 
         //Producer
-        public int ProducerId { get; }
+        public int ProducerId { get; set; }
         [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
 
         //Category
-        public int categoryId { get; }
+        public int categoryId { get; set; }
         [ForeignKey("CategoryId")]
         public MovieCategory Category { get; set; }
 
